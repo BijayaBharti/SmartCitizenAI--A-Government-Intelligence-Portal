@@ -189,7 +189,7 @@ ASHOKA_CHAKRA_URL = "https://commons.wikimedia.org/wiki/Special:FilePath/Ashoka_
 
 SUPPORTED_LANGUAGES = [
     "English", "Hindi", "Hinglish", "Bengali", "Tamil", "Telugu",
-    "Marathi", "Gujarati", "Punjabi", "Kannada", "Malayalam", "Odia",
+    "Marathi", "Gujarati", "Punjabi", "Kannada", "Malayalam", "Odia","Bhojpuri"
 ]
 
 # A small, curated set of static UI labels translated per language.
