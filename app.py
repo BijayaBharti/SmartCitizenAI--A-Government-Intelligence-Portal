@@ -3496,132 +3496,109 @@ st.markdown(f"""
 # PREMIUM CITIZENAI HERO
 # ============================================================
 
-st.markdown(f"""
-<div class="citizenai-hero">
+st.markdown(f"""<div class="citizenai-hero">
+<div style="
+display:flex;
+align-items:center;
+justify-content:space-between;
+min-height:320px;
+gap:40px;
+">
 
-    <div style="
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        min-height:320px;
-        gap:40px;
-    ">
+<div style="
+flex:1;
+max-width:760px;
+">
 
-        <!-- LEFT CONTENT -->
+<div style="
+font-size:1rem;
+font-weight:600;
+color:#FF9933;
+margin-bottom:12px;
+">
+{t('hero_greeting')}
+</div>
 
-        <div style="
-            flex:1;
-            max-width:760px;
-        ">
+<h1>
+{t('hero_title_1')}
+<span style="color:#FF9933 !important;">
+{t('hero_title_2')}
+</span>
+<br>
+{t('hero_title_3')}
+</h1>
 
-            <div style="
-                font-size:1rem;
-                font-weight:600;
-                color:#FF9933;
-                margin-bottom:12px;
-            ">
-                {t('hero_greeting')}
-            </div>
+<p>
+{t('hero_subtitle')}
+</p>
 
-            <h1>
-                {t('hero_title_1')}
-                <span style="color:#FF9933 !important;">
-                    {t('hero_title_2')}
-                </span>
-                <br>
-                {t('hero_title_3')}
-            </h1>
+<div class="citizenai-badge-row">
 
-            <p>
-                {t('hero_subtitle')}
-            </p>
+<span class="citizenai-badge">
+{t('hero_badge_1')}
+</span>
 
-            <div class="citizenai-badge-row">
+<span class="citizenai-badge">
+{t('hero_badge_2')}
+</span>
 
-                <span class="citizenai-badge">
-                    {t('hero_badge_1')}
-                </span>
+<span class="citizenai-badge">
+{t('hero_badge_3')}
+</span>
 
-                <span class="citizenai-badge">
-                    {t('hero_badge_2')}
-                </span>
-
-                <span class="citizenai-badge">
-                    {t('hero_badge_3')}
-                </span>
-
-                <span class="citizenai-badge">
-                    {t('hero_badge_4')}
-                </span>
-
-            </div>
-
-        </div>
-
-
-        <!-- RIGHT AI VISUAL -->
-
-        <div style="
-            width:290px;
-            min-width:250px;
-            height:290px;
-
-            display:flex;
-            align-items:center;
-            justify-content:center;
-
-            position:relative;
-            z-index:6;
-        ">
-
-            <div style="
-                width:235px;
-                height:235px;
-
-                border-radius:50%;
-
-                background:
-                    linear-gradient(
-                        145deg,
-                        rgba(11,94,215,0.82),
-                        rgba(5,30,55,0.85)
-                    );
-
-                border:
-                    1px solid rgba(255,255,255,0.22);
-
-                box-shadow:
-                    0 0 60px rgba(30,130,230,0.28);
-
-                display:flex;
-                align-items:center;
-                justify-content:center;
-
-                overflow:hidden;
-            ">
-
-                <img
-                    src="{EMBLEM_IMG_URL}"
-                    alt="Government of India Emblem"
-                    style="
-                        width:145px;
-                        height:175px;
-                        object-fit:contain;
-                        filter:
-                            brightness(0)
-                            invert(1)
-                            opacity(0.90);
-                    "
-                >
-
-            </div>
-
-        </div>
-
-    </div>
+<span class="citizenai-badge">
+{t('hero_badge_4')}
+</span>
 
 </div>
-""", unsafe_allow_html=True)
+
+</div>
+
+<div style="
+width:290px;
+min-width:250px;
+height:290px;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
+z-index:6;
+">
+
+<div style="
+width:235px;
+height:235px;
+border-radius:50%;
+background:linear-gradient(
+145deg,
+rgba(11,94,215,0.82),
+rgba(5,30,55,0.85)
+);
+border:1px solid rgba(255,255,255,0.22);
+box-shadow:0 0 60px rgba(30,130,230,0.28);
+display:flex;
+align-items:center;
+justify-content:center;
+overflow:hidden;
+">
+
+<img
+src="{EMBLEM_IMG_URL}"
+alt="Government of India Emblem"
+style="
+width:145px;
+height:175px;
+object-fit:contain;
+filter:brightness(0) invert(1);
+"
+/>
+
+</div>
+
+</div>
+
+</div>
+</div>""", unsafe_allow_html=True)
    
 # ---- Live stats dashboard ----
 render_stats_dashboard()
