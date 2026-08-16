@@ -3623,9 +3623,9 @@ st.markdown(f"""
 </div>
 """, unsafe_allow_html=True)
    
-    # ---- Live stats dashboard ----
-    render_stats_dashboard()
-    st.markdown("<br>", unsafe_allow_html=True)
+# ---- Live stats dashboard ----
+render_stats_dashboard()
+st.markdown("<br>", unsafe_allow_html=True)
 
     # ---- Explore AI Features grid ----
     f1, f2 = st.columns([5, 1])
