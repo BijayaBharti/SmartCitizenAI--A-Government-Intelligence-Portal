@@ -1,0 +1,134 @@
+[
+  {
+    "name": "PM-KISAN (Pradhan Mantri Kisan Samman Nidhi)",
+    "description": "Income support of Rs. 6,000 per year to small and marginal farmer families, paid in three installments.",
+    "min_age": 18,
+    "max_age": 120,
+    "max_income": 250000,
+    "categories": ["farmer"],
+    "benefits": "Rs. 6,000 per year direct income support in three equal installments.",
+    "how_to_apply": "Register online at pmkisan.gov.in or visit the nearest Common Service Centre (CSC) with land records and Aadhaar.",
+    "official_link": "https://pmkisan.gov.in"
+  },
+  {
+    "name": "Pradhan Mantri Awas Yojana - Gramin (PMAY-G)",
+    "description": "Financial assistance for construction of a pucca house for rural families without a house or living in kutcha houses.",
+    "min_age": 18,
+    "max_age": 120,
+    "max_income": 300000,
+    "categories": ["bpl", "farmer", "unemployed"],
+    "benefits": "Financial assistance up to Rs. 1.2 lakh (plains) / Rs. 1.3 lakh (hilly areas) for house construction.",
+    "how_to_apply": "Apply through the Gram Panchayat or online at pmayg.nic.in using the SECC-2011 database verification.",
+    "official_link": "https://pmayg.nic.in"
+  },
+  {
+    "name": "Pradhan Mantri Awas Yojana - Urban (PMAY-U)",
+    "description": "Affordable housing scheme for urban poor with interest subsidy on home loans.",
+    "min_age": 18,
+    "max_age": 120,
+    "max_income": 1800000,
+    "categories": ["bpl", "unemployed", "student"],
+    "benefits": "Interest subsidy of up to 6.5% on home loans depending on income category.",
+    "how_to_apply": "Apply online at pmaymis.gov.in or through empanelled banks/housing finance companies.",
+    "official_link": "https://pmaymis.gov.in"
+  },
+  {
+    "name": "Ayushman Bharat - PM Jan Arogya Yojana (PM-JAY)",
+    "description": "Health insurance cover of Rs. 5 lakh per family per year for secondary and tertiary care hospitalisation.",
+    "min_age": 0,
+    "max_age": 120,
+    "max_income": 250000,
+    "categories": ["bpl", "farmer", "unemployed", "disabled", "senior_citizen"],
+    "benefits": "Cashless health cover up to Rs. 5 lakh per family per year at empanelled hospitals.",
+    "how_to_apply": "Check eligibility at pmjay.gov.in and get a PM-JAY card from the nearest empanelled hospital or Common Service Centre.",
+    "official_link": "https://pmjay.gov.in"
+  },
+  {
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "description": "Free LPG gas connection to women from below poverty line (BPL) households.",
+    "min_age": 18,
+    "max_age": 120,
+    "max_income": 200000,
+    "categories": ["bpl", "women"],
+    "benefits": "Free LPG connection with financial support for the first refill and stove.",
+    "how_to_apply": "Apply at the nearest LPG distributor with Aadhaar, BPL certificate, and bank account details.",
+    "official_link": "https://pmuy.gov.in"
+  },
+  {
+    "name": "National Scholarship Portal - Post-Matric Scholarship",
+    "description": "Financial assistance for students from economically weaker sections to pursue post-matriculation education.",
+    "min_age": 15,
+    "max_age": 35,
+    "max_income": 250000,
+    "categories": ["student"],
+    "benefits": "Tuition fee reimbursement and maintenance allowance depending on the course and category.",
+    "how_to_apply": "Apply online at scholarships.gov.in with income certificate, mark sheets and bank details.",
+    "official_link": "https://scholarships.gov.in"
+  },
+  {
+    "name": "Atal Pension Yojana (APY)",
+    "description": "Pension scheme for workers in the unorganised sector, guaranteeing a fixed monthly pension after age 60.",
+    "min_age": 18,
+    "max_age": 40,
+    "max_income": 500000,
+    "categories": ["unemployed", "farmer"],
+    "benefits": "Guaranteed monthly pension of Rs. 1,000 to Rs. 5,000 after the age of 60 based on contribution.",
+    "how_to_apply": "Open an APY account through your bank or post office savings account.",
+    "official_link": "https://npscra.nsdl.co.in/scheme-details.php"
+  },
+  {
+    "name": "Sukanya Samriddhi Yojana (SSY)",
+    "description": "Savings scheme for the girl child offering high interest rate and tax benefits, to fund education and marriage.",
+    "min_age": 0,
+    "max_age": 10,
+    "max_income": 999999999,
+    "categories": ["women", "student"],
+    "benefits": "High, government-guaranteed interest rate with tax benefits under Section 80C.",
+    "how_to_apply": "Open an account at any post office or authorised bank branch in the girl child's name.",
+    "official_link": "https://www.india.gov.in/sukanya-samriddhi-yojana"
+  },
+  {
+    "name": "Indira Gandhi National Old Age Pension Scheme (IGNOAPS)",
+    "description": "Monthly pension for senior citizens living below the poverty line.",
+    "min_age": 60,
+    "max_age": 120,
+    "max_income": 200000,
+    "categories": ["bpl", "senior_citizen"],
+    "benefits": "Monthly pension of Rs. 200 to Rs. 500 (varies by state, many states top this up).",
+    "how_to_apply": "Apply at the local Panchayat/Municipal office or Social Welfare Department with age and income proof.",
+    "official_link": "https://nsap.nic.in"
+  },
+  {
+    "name": "National Disability Pension Scheme",
+    "description": "Monthly pension support for persons with severe or multiple disabilities from BPL households.",
+    "min_age": 18,
+    "max_age": 79,
+    "max_income": 200000,
+    "categories": ["bpl", "disabled"],
+    "benefits": "Monthly pension assistance (amount varies by state, typically Rs. 300 - Rs. 500).",
+    "how_to_apply": "Apply at the local Social Welfare Department with disability certificate and income proof.",
+    "official_link": "https://nsap.nic.in"
+  },
+  {
+    "name": "Pradhan Mantri Mudra Yojana (PMMY)",
+    "description": "Collateral-free loans up to Rs. 10 lakh for non-corporate, non-farm small and micro enterprises.",
+    "min_age": 18,
+    "max_age": 65,
+    "max_income": 999999999,
+    "categories": ["unemployed", "women", "farmer"],
+    "benefits": "Collateral-free loans under Shishu (up to Rs. 50,000), Kishore (up to Rs. 5 lakh) and Tarun (up to Rs. 10 lakh) categories.",
+    "how_to_apply": "Apply through any nationalised bank, RRB, cooperative bank, MFI or NBFC with a business plan.",
+    "official_link": "https://www.mudra.org.in"
+  },
+  {
+    "name": "Pradhan Mantri Kaushal Vikas Yojana (PMKVY)",
+    "description": "Free skill development training and certification for youth to improve employability.",
+    "min_age": 15,
+    "max_age": 45,
+    "max_income": 999999999,
+    "categories": ["unemployed", "student"],
+    "benefits": "Free industry-relevant skill training with certification and placement assistance.",
+    "how_to_apply": "Register at pmkvyofficial.org or visit the nearest PMKVY training centre.",
+    "official_link": "https://www.pmkvyofficial.org"
+  }
+]

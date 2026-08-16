@@ -1,0 +1,26 @@
+streamlit>=1.32
+numpy
+pillow
+python-dotenv
+
+# LangChain / RAG stack
+langchain-core
+langchain-community
+langchain-text-splitters
+langchain-google-genai
+pypdf
+faiss-cpu
+
+# Live web search (Home page updates + Live Search tab)
+tavily-python
+
+# OCR
+easyocr
+
+# PDF export of generated letters/checklists
+fpdf2
+
+# Voice input (mic recorder + Google speech-to-text) — REQUIRED for the
+# 🎤 Voice Input (Beta) section under AI Assistant to appear at all.
+streamlit-mic-recorder
+SpeechRecognition
