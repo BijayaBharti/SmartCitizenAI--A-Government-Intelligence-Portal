@@ -8,6 +8,7 @@ import os
 import re
 import json
 import time
+import textwrap
 from datetime import datetime
 
 import streamlit as st
@@ -3432,66 +3433,52 @@ def render_home_page():
 # CITIZENAI — INDIAN GOVERNMENT TOP BANNER
 # ============================================================
 
-st.markdown(f"""
-<div class="citizenai-government-banner">
+st.markdown(
+    textwrap.dedent(f"""
+    <div class="citizenai-government-banner">
 
-    <div class="citizenai-banner-overlay"></div>
+        <div class="citizenai-banner-content">
 
-    <div class="citizenai-banner-content">
+            <div class="citizenai-banner-left">
 
-        <div class="citizenai-banner-left">
-
-            <img
-                src="{EMBLEM_IMG_URL}"
-                alt="Emblem of India"
-            >
-
-        </div>
-
-
-        <div class="citizenai-banner-center">
-
-            <div class="citizenai-banner-title">
-
-                <span class="banner-white">
-                    Citizen
-                </span>
-
-                <span class="banner-saffron">
-                    A
-                </span>
-
-                <span class="banner-green">
-                    I
-                </span>
+                <img
+                    src="{EMBLEM_IMG_URL}"
+                    alt="Emblem of India"
+                >
 
             </div>
 
-            <div class="citizenai-banner-subtitle">
-                AI LEGAL ASSISTANT FOR EVERY CITIZEN
+            <div class="citizenai-banner-center">
+
+                <div class="citizenai-banner-title">
+                    <span class="banner-white">Citizen</span><span class="banner-saffron">A</span><span class="banner-green">I</span>
+                </div>
+
+                <div class="citizenai-banner-subtitle">
+                    AI LEGAL ASSISTANT FOR EVERY CITIZEN
+                </div>
+
+                <div class="citizenai-banner-tag">
+                    Your Rights. Your Voice. Your AI Assistant.
+                </div>
+
             </div>
 
-            <div class="citizenai-banner-tag">
-                Your Rights. Your Voice. Your AI Assistant.
-            </div>
+            <div class="citizenai-banner-right">
 
-        </div>
+                <div class="citizenai-banner-quote">
+                    <b>Sashakt Nagrik</b><br>
+                    Sashakt Bharat
+                </div>
 
-
-        <div class="citizenai-banner-right">
-
-            <div class="citizenai-banner-quote">
-                <b>Sashakt Nagrik</b>
-                <br>
-                Sashakt Bharat
             </div>
 
         </div>
 
     </div>
-
-</div>
-""", unsafe_allow_html=True)              
+    """),
+    unsafe_allow_html=True
+)         
 # ============================================================
 # PREMIUM CITIZENAI HERO
 # ============================================================
