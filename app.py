@@ -186,6 +186,22 @@ BG_LIGHT = "#F4F6F9"
 EMBLEM_IMG_URL = "https://commons.wikimedia.org/wiki/Special:FilePath/Emblem_of_India.svg"
 FLAG_IMG_URL = "https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_India.svg"
 ASHOKA_CHAKRA_URL = "https://commons.wikimedia.org/wiki/Special:FilePath/Ashoka_Chakra.svg"
+# ============================================================
+# ONLINE GOVERNMENT / LEGAL IMAGES
+# Wikimedia Commons - remotely loaded, no local image files
+# ============================================================
+
+RED_FORT_IMG_URL = (
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Red-Fort.jpg"
+)
+
+CONSTITUTION_IMG_URL = (
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Constitution_of_India.jpg"
+)
+
+SUPREME_COURT_IMG_URL = (
+    "https://commons.wikimedia.org/wiki/Special:FilePath/Supreme_Court_of_India.jpg"
+)
 
 SUPPORTED_LANGUAGES = [
     "English", "Hindi", "Hinglish", "Bengali", "Tamil", "Telugu",
@@ -2297,6 +2313,124 @@ def inject_custom_css():
 
     st.markdown(f"""
     <style>
+    /* =========================================================
+   GOVERNMENT + RED FORT BANNER
+   ========================================================= */
+
+.citizenai-government-banner {{
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 16px;
+    margin-bottom: 14px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.92) 0%,
+            rgba(255,255,255,0.72) 35%,
+            rgba(255,255,255,0.35) 65%,
+            rgba(255,255,255,0.58) 100%
+        ),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Red-Fort.jpg");
+
+    background-size: cover;
+    background-position: center 52%;
+
+    border: 1px solid rgba(10,77,162,0.14);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.18);
+}
+
+
+.citizenai-banner-content {{
+    position: relative;
+    z-index: 3;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 28px;
+}}
+
+
+.citizenai-banner-left img {{
+    width: 72px;
+    height: 95px;
+    object-fit: contain;
+}}
+
+
+.citizenai-banner-center {{
+    text-align: center;
+    flex: 1;
+}}
+
+
+.citizenai-banner-title {{
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 900;
+    letter-spacing: -1px;
+}}
+
+
+.banner-white {{
+    color: #102A43;
+}}
+
+
+.banner-saffron {{
+    color: #FF9933;
+}}
+
+
+.banner-green {{
+    color: #138808;
+}}
+
+
+.citizenai-banner-subtitle {{
+    margin-top: 8px;
+    color: #102A43;
+    font-size: 1rem;
+    font-weight: 800;
+}}
+
+
+.citizenai-banner-tag {{
+    display: inline-block;
+
+    margin-top: 8px;
+    padding: 7px 18px;
+
+    border-radius: 8px;
+
+    background: rgba(6,31,58,0.94);
+
+    color: white;
+
+    font-size: 0.82rem;
+    font-weight: 600;
+}}
+
+
+.citizenai-banner-right {{
+    width: 160px;
+    text-align: center;
+}}
+
+
+.citizenai-banner-quote {{
+    color: #17202A;
+    font-size: 0.82rem;
+    line-height: 1.45;
+    font-style: italic;
+}}
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600;700;800&family=Mukta:wght@400;600;700&display=swap');
 
         :root {{
@@ -2355,45 +2489,175 @@ def inject_custom_css():
         .citizenai-masthead .titles .hi {{
             font-weight: 600; font-size: 0.95rem; color: var(--subtext-color);
         }}
+        /* =========================================================
+   PREMIUM AI + INDIAN GOVERNMENT HERO
+   ========================================================= */
 
-        /* ---------- Hero Section ---------- */
-        .citizenai-hero {{
-            position: relative;
-            overflow: hidden;
-            border-radius: 20px;
-            padding: 2.6rem 2.2rem;
-            margin-bottom: 1.6rem;
-            background: linear-gradient(120deg, var(--primary) 0%, #16649e 45%, var(--saffron) 100%);
-            background-size: 200% 200%;
-            animation: heroGradient 12s ease infinite;
-            box-shadow: 0 10px 30px rgba(10,77,162,0.25);
-            color: white !important;
-        }}
-        .citizenai-hero::after {{
-            content: "";
-            position: absolute;
-            right: -60px; top: -60px;
-            width: 260px; height: 260px;
-            background: url('{ASHOKA_CHAKRA_URL}') center / contain no-repeat;
-            opacity: 0.12;
-            pointer-events: none;
-        }}
-        @keyframes heroGradient {{
-            0% {{ background-position: 0% 50%; }}
-            50% {{ background-position: 100% 50%; }}
-            100% {{ background-position: 0% 50%; }}
-        }}
-        .citizenai-hero h1 {{
-            color: white !important;
-            font-size: 2.6rem;
-            margin-bottom: 0.3rem;
-        }}
-        .citizenai-hero p {{
-            color: rgba(255,255,255,0.92) !important;
-            font-size: 1.15rem;
-            margin-bottom: 0;
-        }}
+.citizenai-hero {{
+    position: relative;
+    overflow: hidden;
 
+    min-height: 390px;
+
+    border-radius: 24px;
+
+    padding: 3rem 3rem;
+
+    margin-bottom: 1.6rem;
+
+    color: white !important;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 14, 27, 0.96) 0%,
+            rgba(5, 25, 45, 0.88) 35%,
+            rgba(5, 25, 45, 0.58) 62%,
+            rgba(5, 25, 45, 0.72) 100%
+        ),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Constitution_of_India.jpg");
+
+    background-size: cover;
+    background-position: center 38%;
+
+    border: 1px solid rgba(255,255,255,0.14);
+
+    box-shadow:
+        0 20px 55px rgba(0,0,0,0.35),
+        inset 0 1px rgba(255,255,255,0.10);
+}}
+
+
+/* AI glow */
+
+.citizenai-hero::before {{
+    content: "";
+
+    position: absolute;
+
+    right: -100px;
+    top: -100px;
+
+    width: 430px;
+    height: 430px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(21,112,205,0.35),
+            rgba(21,112,205,0.08) 45%,
+            transparent 70%
+        );
+
+    pointer-events: none;
+}}
+
+
+/* Ashoka Chakra */
+
+.citizenai-hero::after {{
+    content: "";
+
+    position: absolute;
+
+    right: 35px;
+    top: 35px;
+
+    width: 270px;
+    height: 270px;
+
+    background:
+        url("{ASHOKA_CHAKRA_URL}")
+        center / contain
+        no-repeat;
+
+    opacity: 0.16;
+
+    filter: grayscale(100%);
+
+    pointer-events: none;
+}}
+
+
+/* Hero text stays above images */
+
+.citizenai-hero > div {{
+    position: relative;
+    z-index: 5;
+}}
+
+
+/* Hero heading */
+
+.citizenai-hero h1 {{
+    color: white !important;
+
+    font-size: clamp(2.4rem, 4vw, 3.5rem);
+
+    line-height: 1.08;
+
+    font-weight: 800;
+
+    letter-spacing: -0.02em;
+
+    margin-bottom: 0.5rem;
+
+    text-shadow:
+        0 3px 15px rgba(0,0,0,0.35);
+}}
+
+
+/* Hero subtitle */
+
+.citizenai-hero p {{
+    color: rgba(255,255,255,0.94) !important;
+
+    font-size: 1.1rem;
+
+    max-width: 720px;
+
+    line-height: 1.6;
+}}
+
+
+/* AI highlighted text */
+
+.citizenai-hero h1 span {{
+    color: #FF9933 !important;
+}}
+
+
+/* Badge */
+
+.citizenai-badge {{
+    display: inline-block;
+
+    padding: 7px 13px;
+
+    border-radius: 999px;
+
+    background: rgba(255,255,255,0.13);
+
+    border: 1px solid rgba(255,255,255,0.20);
+
+    backdrop-filter: blur(10px);
+
+    color: white !important;
+
+    font-size: 0.78rem;
+
+    font-weight: 600;
+
+    margin-right: 7px;
+
+    margin-top: 6px;
+}}
+
+       
+        
+            
         /* ---------- Glassmorphism cards / containers ---------- */
         div[data-testid="stVerticalBlockBorderWrapper"] {{
             border-radius: 16px !important;
@@ -3164,27 +3428,201 @@ def render_home_page():
             if st.button(t("home_go_settings"), key="home_go_settings", use_container_width=True):
                 st.session_state.active_page = "settings"
                 st.rerun()
+# ============================================================
+# CITIZENAI — INDIAN GOVERNMENT TOP BANNER
+# ============================================================
 
-    # ---- Hero welcome banner ----
-    st.markdown(f"""
-    <div class="citizenai-hero">
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
-            <div style="max-width:70%;">
-                <div style="font-size:1.05rem;">{t('hero_greeting')}</div>
-                <h1 style="margin-top:2px;">{t('hero_title_1')} <span style="color:#FFE1B0;">{t('hero_title_2')}</span> {t('hero_title_3')}</h1>
-                <p>{t('hero_subtitle')}</p>
-                <div class="citizenai-badge-row">
-                    <span class="citizenai-badge">{t('hero_badge_1')}</span>
-                    <span class="citizenai-badge">{t('hero_badge_2')}</span>
-                    <span class="citizenai-badge">{t('hero_badge_3')}</span>
-                    <span class="citizenai-badge">{t('hero_badge_4')}</span>
-                </div>
-            </div>
-            <div style="font-size:4.5rem; line-height:1;">🏛️🤖</div>
+st.markdown(f"""
+<div class="citizenai-government-banner">
+
+    <div class="citizenai-banner-overlay"></div>
+
+    <div class="citizenai-banner-content">
+
+        <div class="citizenai-banner-left">
+
+            <img
+                src="{EMBLEM_IMG_URL}"
+                alt="Emblem of India"
+            >
+
         </div>
-    </div>
-    """, unsafe_allow_html=True)
 
+
+        <div class="citizenai-banner-center">
+
+            <div class="citizenai-banner-title">
+
+                <span class="banner-white">
+                    Citizen
+                </span>
+
+                <span class="banner-saffron">
+                    A
+                </span>
+
+                <span class="banner-green">
+                    I
+                </span>
+
+            </div>
+
+            <div class="citizenai-banner-subtitle">
+                AI LEGAL ASSISTANT FOR EVERY CITIZEN
+            </div>
+
+            <div class="citizenai-banner-tag">
+                Your Rights. Your Voice. Your AI Assistant.
+            </div>
+
+        </div>
+
+
+        <div class="citizenai-banner-right">
+
+            <div class="citizenai-banner-quote">
+                <b>Sashakt Nagrik</b>
+                <br>
+                Sashakt Bharat
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+""", unsafe_allow_html=True)              
+# ============================================================
+# PREMIUM CITIZENAI HERO
+# ============================================================
+
+st.markdown(f"""
+<div class="citizenai-hero">
+
+    <div style="
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        min-height:320px;
+        gap:40px;
+    ">
+
+        <!-- LEFT CONTENT -->
+
+        <div style="
+            flex:1;
+            max-width:760px;
+        ">
+
+            <div style="
+                font-size:1rem;
+                font-weight:600;
+                color:#FF9933;
+                margin-bottom:12px;
+            ">
+                {t('hero_greeting')}
+            </div>
+
+            <h1>
+                {t('hero_title_1')}
+                <span style="color:#FF9933 !important;">
+                    {t('hero_title_2')}
+                </span>
+                <br>
+                {t('hero_title_3')}
+            </h1>
+
+            <p>
+                {t('hero_subtitle')}
+            </p>
+
+            <div class="citizenai-badge-row">
+
+                <span class="citizenai-badge">
+                    {t('hero_badge_1')}
+                </span>
+
+                <span class="citizenai-badge">
+                    {t('hero_badge_2')}
+                </span>
+
+                <span class="citizenai-badge">
+                    {t('hero_badge_3')}
+                </span>
+
+                <span class="citizenai-badge">
+                    {t('hero_badge_4')}
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT AI VISUAL -->
+
+        <div style="
+            width:290px;
+            min-width:250px;
+            height:290px;
+
+            display:flex;
+            align-items:center;
+            justify-content:center;
+
+            position:relative;
+            z-index:6;
+        ">
+
+            <div style="
+                width:235px;
+                height:235px;
+
+                border-radius:50%;
+
+                background:
+                    linear-gradient(
+                        145deg,
+                        rgba(11,94,215,0.82),
+                        rgba(5,30,55,0.85)
+                    );
+
+                border:
+                    1px solid rgba(255,255,255,0.22);
+
+                box-shadow:
+                    0 0 60px rgba(30,130,230,0.28);
+
+                display:flex;
+                align-items:center;
+                justify-content:center;
+
+                overflow:hidden;
+            ">
+
+                <img
+                    src="{EMBLEM_IMG_URL}"
+                    alt="Government of India Emblem"
+                    style="
+                        width:145px;
+                        height:175px;
+                        object-fit:contain;
+                        filter:
+                            brightness(0)
+                            invert(1)
+                            opacity(0.90);
+                    "
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+""", unsafe_allow_html=True)
+   
     # ---- Live stats dashboard ----
     render_stats_dashboard()
     st.markdown("<br>", unsafe_allow_html=True)
