@@ -3627,15 +3627,15 @@ st.markdown(f"""
 render_stats_dashboard()
 st.markdown("<br>", unsafe_allow_html=True)
 
-    # ---- Explore AI Features grid ----
-    f1, f2 = st.columns([5, 1])
-    with f1:
-        st.markdown(f"#### {t('home_explore')}")
-        st.caption(t("home_explore_caption"))
-    with f2:
-        if st.button(t("home_customize"), key="customize_dashboard_btn", use_container_width=True):
-            st.session_state.active_page = "settings"
-            st.rerun()
+# ---- Explore AI Features grid ----
+f1, f2 = st.columns([5, 1])
+with f1:
+    st.markdown(f"#### {t('home_explore')}")
+    st.caption(t("home_explore_caption"))
+with f2:
+    if st.button(t("home_customize"), key="customize_dashboard_btn", use_container_width=True):
+        st.session_state.active_page = "settings"
+        st.rerun()
 
     for row_start in range(0, len(PAGE_DEFS), 4):
         row_pages = PAGE_DEFS[row_start:row_start + 4]
