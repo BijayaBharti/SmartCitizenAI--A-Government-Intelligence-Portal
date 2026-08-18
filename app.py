@@ -2360,22 +2360,34 @@ def inject_custom_css():
         .citizenai-hero {{
             position: relative;
             overflow: hidden;
+        
             border-radius: 20px;
-            padding: 2.6rem 2.2rem;
+        
+            padding: 2.8rem 2.4rem;
             margin-bottom: 1.6rem;
+        
+            min-height: 330px;
+        
             background:
                 linear-gradient(
                     90deg,
-                    rgba(5, 25, 45, 0.92),
-                    rgba(5, 25, 45, 0.65),
-                    rgba(5, 25, 45, 0.35)
+                    rgba(3, 20, 38, 0.96) 0%,
+                    rgba(3, 30, 55, 0.82) 38%,
+                    rgba(5, 55, 85, 0.55) 70%,
+                    rgba(0, 0, 0, 0.35) 100%
                 ),
                 url("https://commons.wikimedia.org/wiki/Special:FilePath/Red_Fort_in_Delhi_03-2016_img3.jpg");
-
+        
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            box-shadow: 0 10px 30px rgba(10,77,162,0.25);
+        
+            border: 1px solid rgba(255,255,255,0.16);
+        
+            box-shadow:
+                0 15px 45px rgba(0,0,0,0.30),
+                inset 0 0 80px rgba(0,0,0,0.25);
+        
             color: white !important;
         }}
         .citizenai-hero::after {{
