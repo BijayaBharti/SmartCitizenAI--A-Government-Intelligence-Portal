@@ -2363,9 +2363,18 @@ def inject_custom_css():
             border-radius: 20px;
             padding: 2.6rem 2.2rem;
             margin-bottom: 1.6rem;
-            background: linear-gradient(120deg, var(--primary) 0%, #16649e 45%, var(--saffron) 100%);
-            background-size: 200% 200%;
-            animation: heroGradient 12s ease infinite;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(5, 25, 45, 0.92),
+                    rgba(5, 25, 45, 0.65),
+                    rgba(5, 25, 45, 0.35)
+                ),
+                url("https://commons.wikimedia.org/wiki/Special:FilePath/Red_Fort_in_Delhi_03-2016_img3.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             box-shadow: 0 10px 30px rgba(10,77,162,0.25);
             color: white !important;
         }}
