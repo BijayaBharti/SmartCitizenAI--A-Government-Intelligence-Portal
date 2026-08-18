@@ -3187,8 +3187,8 @@ def render_home_page():
                 st.rerun()
 
     # ---- Hero welcome banner ----
-   st.markdown(f"""<div class="citizenai-hero">
-   <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:30px;">
+        st.markdown(f"""<div class="citizenai-hero">
+    <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:30px;">
     
     <div style="max-width:70%;">
     <div style="font-size:1.05rem;">{t('hero_greeting')}</div>
