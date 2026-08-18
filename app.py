@@ -3221,36 +3221,11 @@ def render_home_page():
                     0 0 55px rgba(30,144,255,0.28);
             
             ">
+            <div style="font-size:4.5rem; line-height:1;">
+                🏛️🤖
+            </div>
             
-                <div style="
-                    width:190px;
-                    height:190px;
-                    border-radius:50%;
-            
-                    display:flex;
-                    align-items:center;
-                    justify-content:center;
-            
-                    background:
-                        linear-gradient(
-                            145deg,
-                            rgba(255,255,255,0.15),
-                            rgba(255,255,255,0.04)
-                        );
-            
-                    border:1px solid rgba(255,255,255,0.25);
-            
-                    box-shadow:
-                        inset 0 0 30px rgba(255,255,255,0.08),
-                        0 10px 35px rgba(0,0,0,0.25);
-            
-                    backdrop-filter:blur(10px);
-            
-                    font-size:5rem;
-                ">
-                    🤖
-                </div>
-
+               
 </div>
     </div>
     """, unsafe_allow_html=True)
