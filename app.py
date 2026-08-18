@@ -3189,47 +3189,88 @@ def render_home_page():
     # ---- Hero welcome banner ----
     st.markdown(f"""
     <div class="citizenai-hero">
-        <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap;">
+    
+        <div style="
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            flex-wrap:wrap;
+            gap:30px;
+        ">
+    
             <div style="max-width:70%;">
-                <div style="font-size:1.05rem;">{t('hero_greeting')}</div>
-                <h1 style="margin-top:2px;">{t('hero_title_1')} <span style="color:#FFE1B0;">{t('hero_title_2')}</span> {t('hero_title_3')}</h1>
-                <p>{t('hero_subtitle')}</p>
-                <div class="citizenai-badge-row">
-                    <span class="citizenai-badge">{t('hero_badge_1')}</span>
-                    <span class="citizenai-badge">{t('hero_badge_2')}</span>
-                    <span class="citizenai-badge">{t('hero_badge_3')}</span>
-                    <span class="citizenai-badge">{t('hero_badge_4')}</span>
+    
+                <div style="font-size:1.05rem;">
+                    {t('hero_greeting')}
                 </div>
+    
+                <h1 style="margin-top:2px;">
+                    {t('hero_title_1')}
+                    <span style="color:#FFE1B0;">
+                        {t('hero_title_2')}
+                    </span>
+                    {t('hero_title_3')}
+                </h1>
+    
+                <p>
+                    {t('hero_subtitle')}
+                </p>
+    
+                <div class="citizenai-badge-row">
+    
+                    <span class="citizenai-badge">
+                        {t('hero_badge_1')}
+                    </span>
+    
+                    <span class="citizenai-badge">
+                        {t('hero_badge_2')}
+                    </span>
+    
+                    <span class="citizenai-badge">
+                        {t('hero_badge_3')}
+                    </span>
+    
+                    <span class="citizenai-badge">
+                        {t('hero_badge_4')}
+                    </span>
+    
+                </div>
+    
+            </div>
+    
+    
             <div style="
                 width:260px;
                 height:260px;
                 border-radius:50%;
+    
                 display:flex;
                 align-items:center;
                 justify-content:center;
-                position:relative;
-            
-                background:
-                    radial-gradient(
-                        circle,
-                        rgba(30,144,255,0.30),
-                        rgba(5,25,45,0.15) 60%,
-                        transparent 72%
-                    );
-            
-                box-shadow:
-                    0 0 55px rgba(30,144,255,0.28);
-            
+    
+                background:radial-gradient(
+                    circle,
+                    rgba(30,144,255,0.30),
+                    rgba(5,25,45,0.15) 60%,
+                    transparent 72%
+                );
+    
+                box-shadow:0 0 55px rgba(30,144,255,0.28);
             ">
-            <div style="font-size:4.5rem; line-height:1;">
-                🏛️🤖
+    
+                <div style="
+                    font-size:4.5rem;
+                    line-height:1;
+                ">
+                    🏛️🤖
+                </div>
+    
             </div>
-            
-               
-</div>
+    
+        </div>
+    
     </div>
     """, unsafe_allow_html=True)
-
     # ---- Live stats dashboard ----
     render_stats_dashboard()
     st.markdown("<br>", unsafe_allow_html=True)
