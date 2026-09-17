@@ -3255,7 +3255,7 @@ def render_home_page():
     
     
     
-    </div>
+    
     """, unsafe_allow_html=True)
     # ---- Live stats dashboard ----
     render_stats_dashboard()
