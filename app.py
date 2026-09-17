@@ -3256,7 +3256,7 @@ def render_home_page():
     
     
     </div>
-    </div>""", unsafe_allow_html=True)
+    """, unsafe_allow_html=True)
     # ---- Live stats dashboard ----
     render_stats_dashboard()
     st.markdown("<br>", unsafe_allow_html=True)
